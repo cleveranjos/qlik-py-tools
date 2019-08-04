@@ -75,7 +75,7 @@ docker run -p 50055:80 -it -v ~/Documents/logs:/qlik-py-tools/core/logs nabeeloz
 
 # Run a container in detached mode, storing predictive models on a volume and logs on a bind mount
 docker run \
-    -p 50055:80 \
+    -p 50055:50055 \
     -d \
     -v pytools-models:/qlik-py-tools/models \
     -v ~/Documents/logs:/qlik-py-tools/core/logs \
